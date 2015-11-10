@@ -1,0 +1,578 @@
+{
+  "id": "4318",
+  "name": "Google Best Pratices",
+  "mobile": true,
+  "notes": "QA fixes",
+  "syntax": 4,
+  "version": 1.08,
+  "style": {
+    "replacements": [
+      {
+        "type": "color",
+        "name": "Link Color",
+        "find": "#21a65b"
+      },
+      {
+        "type": "color",
+        "name": "Link Hover Color",
+        "find": "#24b661"
+      },
+      {
+        "type": "color",
+        "name": "Primary Text Color",
+        "find": "#707070"
+      },
+      {
+        "type": "color",
+        "name": "Secondary Text Color",
+        "find": "#fffffa"
+      },
+      {
+        "type": "color",
+        "name": "Main Action Color",
+        "find": "#24b663"
+      },
+      {
+        "type": "color",
+        "name": "CTA Button Text Color",
+        "find": "#fffff0"
+      },
+      {
+        "type": "color",
+        "name": "Header Background Color",
+        "find": "#fffffe"
+      },
+      {
+        "type": "color",
+        "name": "Conversion Banner Background Color",
+        "find": "#0071ce"
+      },
+      {
+        "type": "color",
+        "name": "Features Background Color",
+        "find": "#fffffd"
+      },
+      {
+        "type": "color",
+        "name": "Testimonials Background Color",
+        "find": "#f1f1f1"
+      },
+      {
+        "type": "color",
+        "name": "In Depth Background Color",
+        "find": "#fffffc"
+      },
+      {
+        "type": "color",
+        "name": "In Depth Border Color",
+        "find": "#f2f2f2"
+      },
+      {
+        "type": "color",
+        "name": "Author Background Color",
+        "find": "#25364b"
+      },
+      {
+        "type": "color",
+        "name": "Author Photo Border Color",
+        "find": "#fffff1"
+      },
+      {
+        "type": "color",
+        "name": "Newsletter Background Color",
+        "find": "#f1f1f0"
+      },
+      {
+        "type": "color",
+        "name": "Newsletter Text Color",
+        "find": "#363636"
+      },
+      {
+        "type": "color",
+        "name": "Footer CTA Background Color",
+        "find": "#fffffb"
+      },
+      {
+        "type": "color",
+        "name": "Footer Background Color",
+        "find": "#f1f1f2"
+      },
+      {
+        "type": "color",
+        "name": "Footer Link Color",
+        "find": "#7d7d7d"
+      }
+    ]
+	},
+	"variables": {},
+	"elements": [
+		{
+			"id": "header",
+			"name": "Header Section",
+			"type": "container"
+		},
+		{
+			"id": "site-header-logo",
+			"name": "Logo",
+			"type": "image",
+			"data": {
+				"max-width": 163
+			}
+		},
+		{
+			"id": "conversion-banner-wrap",
+			"name": "Conversion Banner Section",
+			"type": "container"
+		},
+		{
+			"id": "conversion-banner-hero-img",
+			"name": "Hero Image",
+			"type": "image",
+			"data": {
+				"max-width": 289
+			}
+		},
+		{
+			"id": "conversion-banner-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "conversion-banner-by-line",
+			"name": "By-line Text",
+			"type": "text"
+		},
+		{
+			"id": "conversion-banner-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "conversion-banner-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "conversion-banner-credit-cards",
+			"name": "Credit Cards Container",
+			"type": "container"
+		},
+		{
+			"id": "credit-card-visa",
+			"name": "Visa",
+			"type": "container"
+		},
+		{
+			"id": "credit-card-mastercard",
+			"name": "MasterCard",
+			"type": "container"
+		},
+		{
+			"id": "credit-card-amex",
+			"name": "American Express",
+			"type": "container"
+		},
+		{
+			"id": "credit-card-discover",
+			"name": "Discover",
+			"type": "container"
+		},
+		{
+			"id": "features-wrap",
+			"name": "Features Section",
+			"type": "container"
+		},
+		{
+			"id": "features-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "features-sub-title",
+			"name": "Sub-Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-list",
+			"name": "Features List",
+			"type": "container"
+		},
+		{
+			"id": "feature-1",
+			"name": "Feature 1 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-1",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-palette-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-1",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-1",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-2",
+			"name": "Feature 2 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-2",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-monitor-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-2",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-2",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-3",
+			"name": "Feature 3 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-3",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-smartphone-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-3",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-3",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-4",
+			"name": "Feature 4 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-4",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-gear-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-4",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-4",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-5",
+			"name": "Feature 5 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-5",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-pencil-paper-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-5",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-5",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-6",
+			"name": "Feature 6 Container",
+			"type": "container"
+		},
+		{
+			"id": "feature-icon-6",
+			"name": "Feature Image",
+			"type": "image",
+			"data": {
+				"max-width": 60,
+				"alternate-sources": [
+					"img/icon-wrenches-light.png"
+				]
+			}
+		},
+		{
+			"id": "feature-title-6",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "feature-body-6",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "testimonials-wrap",
+			"name": "Testimonial Section",
+			"type": "container"
+		},
+		{
+			"id": "testimonials-quote",
+			"name": "Quote Text",
+			"type": "text"
+		},
+		{
+			"id": "testimonials-attribution",
+			"name": "Attribution Text",
+			"type": "text"
+		},
+		{
+			"id": "in-depth-wrap",
+			"name": "In Depth Section",
+			"type": "container"
+		},
+		{
+			"id": "in-depth-content-block-1",
+			"name": "Content Block 1",
+			"type": "container"
+		},
+		{
+			"id": "content-block-1-img",
+			"name": "Image",
+			"type": "image",
+			"data": {
+				"max-width": 350,
+				"alternate-sources": [
+					"img/gears-light.png"
+				]
+			}
+		},
+		{
+			"id": "content-block-1-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "content-block-1-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "in-depth-content-block-2",
+			"name": "Content Block 2",
+			"type": "container"
+		},
+		{
+			"id": "content-block-2-img",
+			"name": "Image",
+			"type": "image",
+			"data": {
+				"max-width": 350,
+				"alternate-sources": [
+					"img/graph-light.png"
+				]
+			}
+		},
+		{
+			"id": "content-block-2-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "content-block-2-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "author-bio-wrap",
+			"name": "Author Section",
+			"type": "container"
+		},
+		{
+			"id": "author-bio-video-embed-wrap",
+			"name": "Video Embed Container",
+			"type": "container"
+		},
+		{
+			"id": "author-bio-video-embed",
+			"name": "Video Embed",
+			"type": "video"
+		},
+		{
+			"id": "author-bio-photo",
+			"name": "Author Image",
+			"type": "image",
+			"data": {
+				"max-width": 198
+			}
+		},
+		{
+			"id": "author-bio-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "author-bio-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "author-bio-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "newsletter-cta-wrap",
+			"name": "Newsletter Section",
+			"type": "container"
+		},
+		{
+			"id": "newsletter-cta-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "newsletter-cta-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "footer-cta-wrap",
+			"name": "Footer CTA Section",
+			"type": "container"
+		},
+		{
+			"id": "footer-cta-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "footer-cta-body",
+			"name": "Body Text",
+			"type": "text"
+		},
+		{
+			"id": "footer-cta-hero-img",
+			"name": "Hero Image",
+			"type": "image",
+			"data": {
+				"max-width": 289
+			}
+		},
+		{
+			"id": "footer-cta-prices",
+			"name": "Prices Container",
+			"type": "container"
+		},
+		{
+			"id": "prices-original",
+			"name": "Original Price Text",
+			"type": "text"
+		},
+		{
+			"id": "prices-buy-now",
+			"name": "Buy Now Price Text",
+			"type": "text"
+		},
+		{
+			"id": "prices-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "footer-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "footer-cta-credit-cards",
+			"name": "Credit Cards Container",
+			"type": "container"
+		},
+		{
+			"id": "footer-credit-card-visa",
+			"name": "Visa",
+			"type": "container"
+		},
+		{
+			"id": "footer-credit-card-mastercard",
+			"name": "MasterCard",
+			"type": "container"
+		},
+		{
+			"id": "footer-credit-card-amex",
+			"name": "American Express",
+			"type": "container"
+		},
+		{
+			"id": "footer-credit-card-discover",
+			"name": "Discover",
+			"type": "container"
+		},
+		{
+			"id": "footer-wrap",
+			"name": "Footer Section",
+			"type": "container"
+		},
+		{
+			"id": "fineprint",
+			"name": "Copyright Text",
+			"type": "text"
+		}
+  ],
+	"form": {}
+}
