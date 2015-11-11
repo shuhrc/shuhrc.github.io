@@ -142,18 +142,34 @@ a:active {
 */
 .site-header-wrap {
   padding: 0 20px;
-  background: #fffffe; }
+  background: #fffffe;
+  height: 80px;
+}
 
 .site-header {
   margin: 0 auto;
-  padding: 20px 0 17px;
+  padding: 20px 0 10px;
   max-width: 960px; }
 
 .site-header__logo {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  max-width: 163px; }
+  width: 50%;
+  max-width: 163px;
+  float: left;
+}
+
+.login-button {
+	/*width: 100px;*/
+  float: right;
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+  color: #21a65b;
+  border: 2px solid #21a65b;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
 
 /*
 #   $$$$$$\                                                              $$\                           $$$$$$$\
@@ -232,7 +248,7 @@ a:active {
   text-align: center; }
 
 .features__sub-title {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.555555556;
   text-align: center; }
 

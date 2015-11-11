@@ -69,9 +69,9 @@ module.exports = function(grunt) {
       all: {
         // This'll just watch the index.html file, you could add **/*.js or **/*.css
         // to watch Javascript and CSS files too.
-        files:['index.html', '**/*.scss'],
+        files:['index.html', '**/*.css'],
         // This configures the task that will run when the file change
-        tasks: ['sass', 'livereload']
+        tasks: ['livereload']
       }
     }
   });
@@ -85,5 +85,5 @@ module.exports = function(grunt) {
     'regarde'
   ]);
 
-  grunt.registerTask('default', ['sass', 'server']);
+  grunt.registerTask('default', ['server']);
 };
