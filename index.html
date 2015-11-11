@@ -11,6 +11,33 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var n=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(n?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(a,o);for(var r=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=r(p[c])};
+    heap.load("3207912030");
+    function ajax(url, callback, data, x) {
+      try {
+        x = new(this.XMLHttpRequest || ActiveXObject)('MSXML2.XMLHTTP.3.0');
+        x.open(data ? 'POST' : 'GET', url, 1);
+        x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        x.onreadystatechange = function () {
+          x.readyState > 3 && callback && callback(x.responseText, x);
+        };
+        x.send(data)
+      } catch (e) {
+        window.console && console.log(e);
+      }
+    };
+    ajax('/profile', function(data) {
+      try {
+        data = JSON.parse(data)
+        data.domain = window.location.host
+        heap.identify(data)
+      } catch (e) {
+        data = ''
+      }
+    })
+  </script>
 </head>
 <body>
 	<header class="site-header-wrap" data-lead-id="header">
@@ -34,7 +61,6 @@
 				<a class="typeform-share cta-btn conversion-banner__cta-btn" href="https://shu10.typeform.com/to/OUaNmu" data-mode="1" target="_blank">CLICK HERE TO BUY NOW</a>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
-				<!-- <a href="#/optin" class="cta-btn conversion-banner__cta-btn" data-lead-id="conversion-banner-cta-btn">CLICK HERE TO BUY NOW</a> -->
 				<div class="credit-cards-wrap conversion-banner__credit-cards-wrap">
 					<ul class="credit-cards cf" data-lead-id="conversion-banner-credit-cards">
 						<li data-lead-id="credit-card-visa"><img src="img/visa.png" alt="VISA credit card" class="credit-card" /></li>
@@ -131,7 +157,7 @@
 
 	<section class="testimonials-wrap" data-lead-id="testimonials-wrap">
 		<div class="testimonials">
-			<p class="testimonials__quote" data-lead-id="testimonials-quote">“Before Fulcrum, I was enrolled in the Udacity Frontend Nanodegree program. The difference has been that Fulcrum is solid knowledge. Before I knew how to make something work, but Fulcrum taught me why it works.”</p>
+			<p class="testimonials__quote" data-lead-id="testimonials-quote">“Before Fulcrum, I was enrolled in an [online] Nanodegree program. The difference has been that Fulcrum is solid knowledge. Before I knew how to make something work, but Fulcrum taught me why it works.”</p>
 			<p class="testimonials__attribution" data-lead-id="testimonials-attribution"><strong>Suya Xu</strong> - Fulcrum student</p>
 		</div>
 	</section>
@@ -153,12 +179,7 @@
 		<div class="footer-cta">
 			<h2 class="footer-cta__title" data-lead-id="footer-cta-title">SO WHAT ARE YOU WAITING FOR?</h2>
 			<p class="footer-cta__body" data-lead-id="footer-cta-body">Education is the best tool to elevate your life. Fulcrum provides you that leverage.</p>
-			<!-- <div class="footer-cta__prices" data-lead-id="footer-cta-prices"> -->
-				<!-- <p class="prices__original" data-lead-id="prices-original">$72.00</p> -->
-				<!-- <p class="prices__buy-now" data-lead-id="prices-buy-now">$2980</p> -->
-				<!-- <p class="prices__disclaimer" data-lead-id="prices-disclaimer">if you buy now.</p> -->
-			<!-- </div> -->
-			<a href="#/optin" class="cta-btn footer-cta__cta-btn" data-lead-id="footer-cta-btn">BUY FULCRUM NOW FOR $2980</a>
+			<a class="typeform-share cta-btn conversion-banner__cta-btn" href="https://shu10.typeform.com/to/OUaNmu" data-mode="1" target="_blank">BUY FULCRUM NOW FOR $2980</a>
 			<div class="credit-cards-wrap">
 				<ul class="credit-cards footer-cta__credit-cards cf" data-lead-id="footer-cta-credit-cards">
 					<li data-lead-id="footer-credit-card-visa"><img src="img/visa.png" alt="VISA credit card" class="credit-card" /></li>
@@ -169,11 +190,5 @@
 			</div>
 		</div>
 	</section>
-
-<!-- 	<footer class="site-footer-wrap" data-lead-id="footer-wrap">
-		<div class="site-footer">
-			<p class="site-footer__fineprint" data-lead-id="fineprint">Copyright @2015. <a href="#">Legal Information</a></p>
-		</div>
-	</footer> -->
 </body>
 </html>
