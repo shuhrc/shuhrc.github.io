@@ -157,6 +157,8 @@ a:active {
   width: 50%;
   max-width: 163px;
   float: left;
+  top: -5px;
+  position: relative;
 }
 
 .login-button {
@@ -183,7 +185,9 @@ a:active {
 */
 .conversion-banner-wrap {
   padding: 0 20px;
-  background: #0071ce; }
+  background: #0071ce;
+  /*background: url("../img/hero-home.jpg");*/
+}
 
 .conversion-banner {
   margin: 0 auto;
@@ -194,7 +198,8 @@ a:active {
   margin: 0 auto 20px;
   float: none;
   width: 50%;
-  max-width: 289px; }
+  max-width: 289px;
+}
 
 .conversion-banner__title {
   margin: 0;
@@ -202,7 +207,7 @@ a:active {
 
 .conversion-banner__by-line {
   margin: 0;
-  padding: 0 0 1.5em;
+  padding: 0 0 2em;
   font-size: 1.125rem;
   color: #fffffa; }
 
